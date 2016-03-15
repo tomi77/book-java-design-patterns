@@ -1,4 +1,4 @@
-## Template method pattern
+# Template method pattern
 
 ## GoF Definition
 
