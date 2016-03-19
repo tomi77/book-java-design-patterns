@@ -11,7 +11,7 @@ public class ChainOfResponsibilityPatternEx {
         faxHandler = new FaxErrorHandler(emailHandler);
 
         // starting point: raiser will raise issues and set the first handler
-        IssueRaiser raiser = new IssueRaiser (faxHandler);
+        IssueRaiser raiser = new IssueRaiser(faxHandler);
 
         Message m1 = new Message("Fax is reaching late to the destination", MessagePriority.Normal);
         Message m2 = new Message("Email is not going", MessagePriority.High);

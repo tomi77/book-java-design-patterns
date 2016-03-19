@@ -14,7 +14,7 @@ public class EmailErrorHandler implements IReceiver {
             return true;
         } else {
             if (nextReceiver != null) {
-                nextReceiver.processMessage(msg);
+                return nextReceiver.processMessage(msg);
             }
         }
         return false;
